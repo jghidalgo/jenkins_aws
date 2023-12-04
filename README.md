@@ -60,4 +60,17 @@ On the Inbound tab, add the rules as follows:<br>
 ### Step 3: Launch an EC2 Instance:
 
 - Open the Amazon EC2 console by selecting EC2 under Compute.
-- From the Amazon EC2 dashboard, select Launch Instance.  
+- From the Amazon EC2 dashboard, select Launch Instance.
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/z1byvnmxeacpe6lb7clg.png)
+
+- The Choose an Amazon Machine Image (AMI) page displays a list of basic configurations called Amazon Machine Images (AMIs) that serve as templates for your instance. Select the HVM edition of the Amazon Linux AMI.
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ws6650uqzo7uxsoq9og5.png)  
+
+- Scroll down and select the key pair you created in the "Create a key pair" section above or any existing key pair you intend to use.
+- Select Select an existing security group.
+- Select the JenkingsWebServerSG security group that you created.
+- Select Launch Instance.
+
+- In the left-hand navigation bar, choose Instances to view the status of your instance. Initially, the status of your instance is pending. After the status changes to running, your instance is ready for use.
