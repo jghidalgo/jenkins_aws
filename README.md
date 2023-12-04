@@ -74,3 +74,81 @@ On the Inbound tab, add the rules as follows:<br>
 - Select Launch Instance.
 
 - In the left-hand navigation bar, choose Instances to view the status of your instance. Initially, the status of your instance is pending. After the status changes to running, your instance is ready for use.
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/g0l7dvb2g4maki5ezql8.png)  
+
+### Step 4: Allocate Elastic IP address:
+
+- In the EC2 Dashboard, navigate to the "Elastic IPs" section on the left-hand side.
+- Click the "Allocate new address" button.
+- A new Elastic IP address will be created and listed in the table below.
+
+- In the EC2 Dashboard, click on "Instances" in the left-hand navigation pane.
+
+- Select the EC2 instance to which you want to associate the Elastic IP address.
+
+- Click on the "Actions" button at the top, then choose "Associate IP address."
+
+- In the "Associate Elastic IP address" dialog, select the Elastic IP address you just allocated from the dropdown list.
+
+- Choose the instance to associate it with from the "Instance" dropdown list.
+
+- You can also specify a private IP address (optional), which can be useful in cases where the instance has multiple network interfaces.
+
+- Click the "Associate" button.
+
+- Once the association is complete, the Elastic IP address will be associated with your selected EC2 instance.
+
+- Now the easy part, at this point, I only spent 3 minutes, let's do the rest.
+
+### Step 5: Install Jenkins:
+
+- Connecting to your Linux instance.
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/pevsa8qddq1i2ha5pl6n.png)
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/4uwcj4bs6g5lc9m8rs11.png)
+
+- In the console, Add the Jenkins repo using the following command:
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/cuan9ktxdmzzopr5njcm.png)
+
+- Import a key file from Jenkins-CI to enable installation from the package:
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/asyv4z5bwqwbozkupt9v.png)
+
+- Install Java (Amazon Linux 2023):
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/c98wivtg38koi9hxbbxg.png)
+
+- Install Jenkins:
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/233k837vm1dsi9bueo9v.png)
+
+- Enable the Jenkins service to start at boot:
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/qb7godukx11225gwxvvs.png)
+
+- Start Jenkins as a service:
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ehsgly97w1rxh0mihv2v.png)
+
+- Connect to http://:8080 from your browser. You will be able to access Jenkins through its management interface
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/02jpdtw5lph5ucskyez6.png)
+
+### Conclusion:
+
+In less than 5 minutes, you have successfully deployed Jenkins on AWS. Now, you can use Jenkins to automate your software development processes, including building, testing, and deploying your applications. Explore Jenkins plugins, set up jobs, and integrate them with your version control system to make the most of this powerful tool.<br>
+
+Now, you're ready to embark on your journey of automated, efficient CI/CD with Jenkins on AWS. Happy automating!<br>
+
+### Additional Tips:
+
+Remember to secure your Jenkins instance by configuring security settings and using strong authentication.<br>
+Regularly back up your Jenkins configuration to prevent data loss.<br>
+Explore Jenkins plugins to extend their functionality to suit your specific needs.<br>
+
+Keep learning, and keep working hard. The Journey is the Reward.
+
+
