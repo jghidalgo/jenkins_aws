@@ -18,3 +18,6 @@ Basic knowledge of Jenkins.<br>
 Open the Amazon EC2 console at https://console.aws.amazon.com/ec2/ and sign in.<br>
 In the navigation pane, under NETWORK & SECURITY, select Key Pairs.<br>
 Select Create key pair.<br>
+
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ho735grgo2s1xw4g4z61.png)
