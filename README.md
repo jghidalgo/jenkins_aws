@@ -7,14 +7,14 @@ Prerequisites:
 
 Before we begin, make sure you have the following prerequisites in place:
 
-An AWS account.
-Familiarity with AWS services.
-Basic knowledge of Jenkins.
+An AWS account.<br>
+Familiarity with AWS services.<br>
+Basic knowledge of Jenkins.<br>
 
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/a3t96ud4abxsefumgi19.jpg)
 
 ### Step 1: Create a key pair:
 
-Open the Amazon EC2 console at https://console.aws.amazon.com/ec2/ and sign in.
-In the navigation pane, under NETWORK & SECURITY, select Key Pairs.
-Select Create key pair.
+Open the Amazon EC2 console at https://console.aws.amazon.com/ec2/ and sign in.<br>
+In the navigation pane, under NETWORK & SECURITY, select Key Pairs.<br>
+Select Create key pair.<br>
